@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a; /* dark navy */
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* container */
+.container {
+  text-align: center;
+}
+
+/* title */
+h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #38bdf8;
+}
+
+/* card */
+.card {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+/* text */
+#source {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* icon */
+.icon {
+  font-size: 60px;
+  transition: all 0.3s ease;
+}
+.card.solar { box-shadow: 0 0 20px #facc15; }
+.card.electric { box-shadow: 0 0 20px #38bdf8; }
+.card.lpg { box-shadow: 0 0 20px #f87171; }
