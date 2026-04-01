@@ -1,9 +1,25 @@
 from fastapi import FastAPI
 import random
 
-from backend.decision import decide_source
-
+from decision import decide_source
 app = FastAPI()
+
+# ✅ API 1: Get data (for graph)
+@app.get("/data")
+def get_data():
+    return [
+        {"time": "1", "energy": 10},
+        {"time": "2", "energy": 20},
+        {"time": "3", "energy": 15},
+    ]
+
+# ✅ API 2: Control system
+@app.post("/control")
+def control_system(data: dict):
+    return {
+        "message": "System updated",
+        "status": data
+    }
 
 @app.get("/status")
 def get_status():

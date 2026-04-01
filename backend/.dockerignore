@@ -1,0 +1,6 @@
+node_modules
+hybrid-dashboard
+venv
+__pycache__
+.git
+*.pyc
